@@ -332,6 +332,32 @@ biogas-methane-forecasting-engine
 ├── requirements.txt
 └── README.md
 
+# File Overview
+
+This project folder includes the following files:
+
+best_pinn_model.pt: Pre-trained Physics-Informed Neural Network model checkpoint.
+
+biogas_digestor_dataset.csv: Synthetic dataset simulating biogas plant operations.
+
+biogas_pinn_train.pt: Checkpoint from PINN model training.
+
+physics_informed_neural_network.py: Custom Python implementation of the Physics-Informed Neural Network.
+
+pinn_example_usage.py: Demonstration script for PINN usage.
+
+pinn_optimized.py: Optimized PINN implementation with improved performance.
+
+quickstart_app.py: Quick start script for initializing and testing the system.
+
+requirements.txt: Lists all Python dependencies needed for the project.
+
+run_app.py: Script to run the forecasting app.
+
+streamlit_biogas_forecasting.py: Main Streamlit application script that ties the forecasting pipeline to the user interface.
+
+Ensure that the dataset (biogas_digestor_dataset.csv) is placed in the same directory as the other scripts, so the app can load it during execution. The PINN model files are checkpoints, so if you don't have them, you’ll need to train the model using the provided training scripts before using the forecasting app.
+
 # Future Improvements
 
 Possible extensions for this project:
